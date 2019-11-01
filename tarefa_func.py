@@ -2,9 +2,10 @@ import sys
 import argparse
 import requests
 import os
-ip_server = os.environ['IPADDR']
-tarefa_end_point = ip_server+"Tarefa"
+ip_server = os.environ['APS_SERVER']
 
+tarefa_end_point = ip_server+"Tarefa"
+print(tarefa_end_point)
 
 def adiciona(args):
     # filtrando e formatando
